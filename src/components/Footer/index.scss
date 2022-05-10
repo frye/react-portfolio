@@ -1,5 +1,5 @@
 .footer-container {
-  background: black;
+  background: var(--theme-bg);
   width: 100%;
   height: 60px;
 
@@ -19,8 +19,12 @@
         margin: 0 10px;
         padding-top: 15px;
 
+        svg {
+          color: var(--theme-font-color);
+        }
+
         &:hover svg {
-          color: #ffd700;
+          color: var(--theme-highlight-color);
           transition: all 0.3s ease-out;
         }
       }
