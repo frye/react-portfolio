@@ -21,25 +21,33 @@
 
   .nav-list {
     display: flex;
-    list-style: none;
-    text-decoration: none;
+    text-align: center;
     padding: 20px;
+    margin-bottom: 10px;
 
     a {
+      font-size: 14px;
+      color: var(--theme-font-color);
+      display: block;
+      line-height: 25px;
+      height: 25px;
+      position: relative;
+      text-decoration: none;
+
       svg {
         display: block;
         height: 30px;
         width: auto;
-        margin: auto 10px;
-        padding: 10px;
+        padding: 0 25px;
         color: var(--theme-font-color);
+        transition: all 0.3s ease-out;
       }
 
       &:hover {
         color: var(--theme-highlight-color);
 
         svg {
-          transition: all 0.3s ease-out;
+          color: var(--theme-highlight-color);
           opacity: 0;
         }
 
@@ -54,13 +62,48 @@
       font-size: 9px;
       letter-spacing: 2px;
       position: absolute;
-      bottom: 0;
+      bottom: 40;
       display: block;
-      width: 100%;
+      height: 100%;
+      line-height: 100px;
       text-align: center;
       opacity: 0;
       -webkit-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out;
+    }
+  }
+  a.home-link {
+    &:after {
+      content: "HOME";
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  a.about-link {
+    &:after {
+      content: "ABOUT";
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  a.project-link {
+    &:after {
+      content: "PROJECTS";
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  a.contact-link {
+    &:after {
+      content: "CONTACT";
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  a.active {
+    color: var(--theme-highlight-color);
+    svg {
+      color: var(--theme-highlight-color);
     }
   }
 }
