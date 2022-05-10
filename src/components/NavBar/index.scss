@@ -82,5 +82,9 @@
         content: "CONTACT";
       }
     }
+
+    a.active {
+      color: var(--theme-highlight-color);
+    }
   }
 }

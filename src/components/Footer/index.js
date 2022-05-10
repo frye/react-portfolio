@@ -3,6 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,9 +20,9 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a target="_blank" rel="noreferrer" href="https://youtube.com">
+          <NavLink to="contact">
             <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-          </a>
+          </NavLink>
         </li>
       </ul>
     </footer>
