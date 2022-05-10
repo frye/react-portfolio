@@ -5,6 +5,10 @@
     --theme-font-family: 'Noto Sans', sans-serif;
 }
 
-html {
-  background-color: var(--theme-bg);
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
