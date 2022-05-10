@@ -8,14 +8,14 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <ul>
-        <li>
-          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/samulijarvinen/">
-            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+      <li>
+          <a target="_blank" rel="noreferrer" href="https://github.com/frye">
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
           </a>
         </li>
         <li>
-          <a target="_blank" rel="noreferrer" href="https://github.com/frye">
-            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/samulijarvinen/">
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
         </li>
         <li>

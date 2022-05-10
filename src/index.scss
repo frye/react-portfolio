@@ -4,3 +4,7 @@
     --theme-font-color: #d3f6ff;
     --theme-font-family: 'Noto Sans', sans-serif;
 }
+
+html {
+  background-color: var(--theme-bg);
+}
