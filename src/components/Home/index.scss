@@ -3,13 +3,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px);
-  background-color: var(--theme-bg);
+  height: 100%;
 
   .hero-text {
     margin-left: 40px;
-    color: var(--theme-font-color);
-    font-family: var(--theme-font-family);
 
     h1 {
       font-size: 4em;
@@ -51,7 +48,7 @@
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 768px) {
   .hero-area {
     .hero-text {
       margin-left: 20px;
