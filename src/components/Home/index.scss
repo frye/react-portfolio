@@ -1,3 +1,74 @@
-.App-container {
-  background-color: white;
+.hero-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  background-color: var(--theme-bg);
+
+  .hero-text {
+    margin-left: 40px;
+    color: var(--theme-font-color);
+    font-family: var(--theme-font-family);
+
+    h1 {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-size: 3em;
+    }
+  }
+
+  .hero-line {
+    margin-left: 20px;
+    height: 300px;
+    border-right: solid var(--theme-font-color) 3px;
+  }
+
+  .hero-picture img {
+    border-radius: 30%;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    font-size: 0.9em;
+  }
+  .hero-area {
+    flex-direction: column;
+
+    .hero-line {
+      height: 3px;
+      width: 300px;
+      margin-left: 0;
+      margin-top: 20px;
+      border-right: none;
+      border-top: solid var(--theme-font-color) 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .hero-area {
+    font-size: 0.7em;
+    h1 {
+      font-size: 3em;
+    }
+  
+    h2 {
+      font-size: 2.5em;
+    }
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .hero-area {
+    .hero-text {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
 }
