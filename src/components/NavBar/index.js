@@ -1,7 +1,14 @@
-import './index.scss';
+import "./index.scss";
 import React from "react";
 import LogoSam from "../../assets/images/logo.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faListCheck,
+} from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   return (
@@ -10,17 +17,24 @@ const NavBar = () => {
         <img src={LogoSam} alt="Logo" />
       </Link>
       <div>
-        <ul>
-          <li>
-            <a href="#About">About</a>
-          </li>
-          <li>
-            <a href="#Projects">Projects</a>
-          </li>
-          <li>
-            <a href="#Contact">Contact</a>
-          </li>
-        </ul>
+        <div className="nav-list">
+          <NavLink exact="true" activeclassname="active" to="/">
+            <FontAwesomeIcon icon={faHome} />
+          </NavLink>
+          <NavLink activeclassname="active" className="about-link" to="/about">
+            <FontAwesomeIcon icon={faUser} />
+          </NavLink>
+          <NavLink
+            activeclassname="active"
+            className="about-link"
+            to="/projects"
+          >
+            <FontAwesomeIcon icon={faListCheck} />
+          </NavLink>
+          <NavLink activeclassname="active" className="about-link" to="/contact">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </NavLink>
+        </div>
       </div>
     </header>
   );
