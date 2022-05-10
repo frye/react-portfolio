@@ -53,11 +53,15 @@
 
 @media screen and (max-width: 820px) {
   .hero-area {
+    .hero-text {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
     font-size: 0.7em;
     h1 {
       font-size: 3em;
     }
-  
+
     h2 {
       font-size: 2.5em;
     }
@@ -66,9 +70,16 @@
 
 @media screen and (max-height: 600px) {
   .hero-area {
-    .hero-text {
-      margin-left: 20px;
-      margin-right: 20px;
+    height: 180vh;
+
+    .hero-line {
+      order: 2;
+      margin-top: none;
+      margin-bottom: 20px;
+    }
+
+    .hero-picture {
+      order: 3;
     }
   }
 }
