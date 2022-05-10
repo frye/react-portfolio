@@ -18,11 +18,15 @@ const NavBar = () => {
       </Link>
       <div>
         <div className="nav-list">
-          <div>
-          <NavLink exact="true" activeclassname="active" className="home-link" to="/">
+          <NavLink
+            exact="true"
+            activeclassname="active"
+            className="home-link"
+            to="/"
+          >
             <FontAwesomeIcon icon={faHome} />
           </NavLink>
-          </div>
+
           <NavLink activeclassname="active" className="about-link" to="/about">
             <FontAwesomeIcon icon={faUser} />
           </NavLink>
@@ -33,7 +37,11 @@ const NavBar = () => {
           >
             <FontAwesomeIcon icon={faListCheck} />
           </NavLink>
-          <NavLink activeclassname="active" className="contact-link" to="/contact">
+          <NavLink
+            activeclassname="active"
+            className="contact-link"
+            to="/contact"
+          >
             <FontAwesomeIcon icon={faEnvelope} />
           </NavLink>
         </div>

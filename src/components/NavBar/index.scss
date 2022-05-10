@@ -20,34 +20,25 @@
   }
 
   .nav-list {
-    display: flex;
+    display: block;
     text-align: center;
-    padding: 20px;
-    margin-bottom: 10px;
+    position: absolute;
+    right: 20px;
+    margin-top: -20px;
 
     a {
-      font-size: 14px;
       color: var(--theme-font-color);
-      display: block;
-      line-height: 25px;
-      height: 25px;
-      position: relative;
+      font-size: 22px;
+      line-height: 51px;
+      width: 51px;
+      padding: 0 10px;
       text-decoration: none;
-
-      svg {
-        display: block;
-        height: 30px;
-        width: auto;
-        padding: 0 25px;
-        color: var(--theme-font-color);
-        transition: all 0.3s ease-out;
-      }
+      position: relative;
 
       &:hover {
         color: var(--theme-highlight-color);
 
         svg {
-          color: var(--theme-highlight-color);
           opacity: 0;
         }
 
@@ -55,55 +46,41 @@
           opacity: 1;
         }
       }
+
+      &:after {
+        content: "";
+        font-size: 10px;
+        position: absolute;
+        bottom: -15px;
+        left: -1px;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.5s ease-out;
+      }
+
+      &:first-child {
+        &::after {
+          content: "HOME";
+        }
+      }
+    }
+    a.about-link {
+      &::after {
+        content: "ABOUT";
+      }
     }
 
-    &:after {
-      content: "";
-      font-size: 9px;
-      letter-spacing: 2px;
-      position: absolute;
-      bottom: 40;
-      display: block;
-      height: 100%;
-      line-height: 100px;
-      text-align: center;
-      opacity: 0;
-      -webkit-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out;
+    a.project-link {
+      &::after {
+        content: "PROJECTS";
+      }
     }
-  }
-  a.home-link {
-    &:after {
-      content: "HOME";
-      transition: all 0.3s ease-out;
-    }
-  }
 
-  a.about-link {
-    &:after {
-      content: "ABOUT";
-      transition: all 0.3s ease-out;
-    }
-  }
-
-  a.project-link {
-    &:after {
-      content: "PROJECTS";
-      transition: all 0.3s ease-out;
-    }
-  }
-
-  a.contact-link {
-    &:after {
-      content: "CONTACT";
-      transition: all 0.3s ease-out;
-    }
-  }
-
-  a.active {
-    color: var(--theme-highlight-color);
-    svg {
-      color: var(--theme-highlight-color);
+    a.contact-link {
+      &::after {
+        content: "CONTACT";
+      }
     }
   }
 }
