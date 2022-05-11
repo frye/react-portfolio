@@ -1,0 +1,8 @@
+.projects-container {
+  padding: 2rem;
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 20rem));
+  gap: 2rem;
+  justify-content: center;
+}

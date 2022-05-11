@@ -1,0 +1,16 @@
+[
+  {
+    "name": "SproutSpy",
+    "description": "Helper tool for any home gardener. Check your growth zone and find out what plants to plant!",
+    "image": "./images/sproutspy.jpg",
+    "deployed_link": "https://fast-cliffs-81659.herokuapp.com/",
+    "github_link": "https://github.com/got-git-group/sproutspy"
+  },
+    {
+    "name": "Test Project 2",
+    "description": "Just some sample data to get started",
+    "image": "./images/weather-dashboard.jpg",
+    "deployed_link": "https://github.com",
+    "github_link": "https://github.com"
+  }
+]
