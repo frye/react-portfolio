@@ -9,4 +9,13 @@
   p {
     padding: 10px;
   }
+
+  .dllink {
+    color: var(--theme-font-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--theme-highlight-color);
+    }
+  }
 }

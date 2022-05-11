@@ -16,7 +16,7 @@ const About = () => {
 
       <p>
         You can find more details in my CV.{" "}
-        <a href="./assets/CV_202110.pdf" className="dllink">
+        <a href="./CV_202110.pdf" className="dllink">
           (Download)
         </a>
       </p>
