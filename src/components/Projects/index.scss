@@ -1,14 +1,7 @@
 .projects-container {
-  padding: 2rem;
-  padding-top: 3rem;
+  padding: 100px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 20rem));
   gap: 2rem;
   justify-content: center;
-}
-
-@media screen and (max-width: 735px) {
-  .projects-container {
-    padding-bottom: 100px;
-  }
 }

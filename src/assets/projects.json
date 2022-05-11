@@ -19,5 +19,26 @@
     "image": "./images/techblog.png",
     "deployed_link": "https://shielded-dawn-17983.herokuapp.com/",
     "github_link": "https://github.com/frye/tech-blog"
+  },
+  {
+    "name": "Webnotes",
+    "description": "A simple note taking app. Create, edit, and delete notes in your browser.",
+    "image": "./images/webnotes.png",
+    "deployed_link": "https://aqueous-savannah-88597.herokuapp.com/",
+    "github_link": "https://github.com/frye/webnotes"
+  },
+  {
+    "name": "Day Planner",
+    "description": "A planner for your day. Create and edit your day's events. Events are saved to local storage. You can also add events in advance to upcoming days.",
+    "image": "./images/day-planner.jpg",
+    "deployed_link": "https://frye.github.io/day-planner/",
+    "github_link": "https://github.com/frye/day-planner"
+  },
+  {
+    "name": "Code Quiz",
+    "description": "Test your javascript knowledge. Answer as many questions as you can. Wrong answers will reduce the available time!", 
+    "image": "./images/code-quiz.jpg",
+    "deployed_link": "https://frye.github.io/code-quiz/",
+    "github_link": "https://github.com/frye/codequiz"
   }
 ]

@@ -1,4 +1,6 @@
 .header-container {
+  position: fixed;
+  top: 0;
   display: flex;
   background: var(--theme-bg);
   width: 100%;
