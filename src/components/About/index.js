@@ -5,7 +5,7 @@ const About = () => {
       <h1>About</h1>
       <p>
         I am an aspiring full stack developer with over two decades of
-        experience in supporting various software egineering teams. From Telecom
+        experience in supporting various software engineering teams. From Telecom
         companies in Finland to Microsoft and now GitHub in the USA. At present
         I am working as a Senior Technical Project Manager.
       </p>
