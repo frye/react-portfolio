@@ -7,10 +7,17 @@
     "github_link": "https://github.com/got-git-group/sproutspy"
   },
     {
-    "name": "Test Project 2",
-    "description": "Just some sample data to get started",
+    "name": "Weathertool",
+    "description": "Keep track of the weather at your facorite locations. Add and remove locations and view 5 day forecast.",
     "image": "./images/weather-dashboard.jpg",
-    "deployed_link": "https://github.com",
-    "github_link": "https://github.com"
+    "deployed_link": "https://frye.github.io/weather-dashboard",
+    "github_link": "https://github.com/frye/weather-dashboard"
+  },
+  {
+    "name": "Tech Blog",
+    "description": "A blog for tech related news and articles.",
+    "image": "./images/techblog.png",
+    "deployed_link": "https://shielded-dawn-17983.herokuapp.com/",
+    "github_link": "https://github.com/frye/tech-blog"
   }
 ]
