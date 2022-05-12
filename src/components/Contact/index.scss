@@ -1,0 +1,86 @@
+.contact-page {
+  width: 100%;
+  color: var(--theme-font-color);
+  padding: 120px 80px;
+
+  h1 {
+    font-size: 2em;
+    padding: 10px;
+    color: var(--theme-highlight-color);
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    padding: 10px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 1s 1s;
+      animation-fill-mode: forwards;
+      clear: both;
+    }
+
+    li.half-width {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    border: 0;
+    background: var(--theme-font-color);
+    height: 2em;
+    font-size: 1.5em;
+    color: var(--theme-bg);
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: var(--theme-font-color);
+    height: 4em;
+    font-size: 1.5em;
+    color: var(--theme-bg);
+    padding: 0 20px;
+    box-sizing: border-box;
+    min-height: 10em;
+  }
+
+  .contact-send {
+    color: var(--theme-highlight-color);
+    background: 0 0;
+    font-size: 1.5em;
+    letter-spacing: 2;
+    text-decoration: none;
+    border: 1px solid var(--theme-highlight-color) ;
+    padding: 4px 10px;
+    border-radius: 5px;
+    float: right;
+  }
+}

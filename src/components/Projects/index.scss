@@ -1,7 +1,19 @@
-.projects-container {
-  padding: 120px 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 20rem));
-  gap: 2rem;
-  justify-content: center;
+.project-page {
+  padding: 120px 40px;
+
+  h1 {
+    font-size: 2em;
+    padding: 10px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    color: var(--theme-highlight-color);
+  }
+
+  .projects-container {
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 20rem));
+    gap: 2rem;
+    justify-content: left;
+  }
 }
