@@ -15,18 +15,27 @@
     h2 {
       font-size: 3em;
     }
+    opacity: 0;
+    animation: fadeInRight 2s 1.5s;
+    animation-fill-mode: forwards;
   }
 
   .hero-line {
     margin-left: 20px;
     height: 300px;
     border-right: solid var(--theme-font-color) 3px;
+    opacity: 0;
+    animation: fadeInUp 1.2s 1.2s;
+    animation-fill-mode: forwards;
   }
 
   .hero-picture img {
     border-radius: 30%;
     width: 350px;
     height: 350px;
+    opacity: 0;
+    animation: fadeInLeft 1s 1s;
+    animation-fill-mode: forwards;
   }
 }
 

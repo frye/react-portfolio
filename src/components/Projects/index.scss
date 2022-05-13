@@ -9,6 +9,9 @@
     padding-left: 40px;
     padding-bottom: 20px;
     color: var(--theme-highlight-color);
+    opacity: 0;
+    animation: fadeInLeft 0.5s 0.5s;
+    animation-fill-mode: forwards;
   }
 
   .projects-container {
@@ -17,6 +20,9 @@
     grid-template-columns: repeat(auto-fit, minmax(16rem, 20rem));
     gap: 2rem;
     justify-content: left;
+    opacity: 0;
+    animation: fadeIn 1s 1s;
+    animation-fill-mode: forwards;
   }
 }
 

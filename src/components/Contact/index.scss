@@ -5,15 +5,19 @@
   max-width: 1000px;
   margin: auto;
 
-  h1 {
+  h1, h2 {
     font-size: 2em;
     padding-top: 10px;
     color: var(--theme-highlight-color);
+    opacity: 0;
+    animation: fadeInLeft 0.5s 0.5s;
+    animation-fill-mode: forwards;
   }
 
   h2 {
     font-size: 1.5em;
     margin-bottom: 1em;
+    color: var(--theme-font-color);
   }
 
   p {
