@@ -29,6 +29,7 @@
         &:hover svg {
           color: var(--theme-highlight-color);
           transition: all 0.3s ease-out;
+          transform: scale(1.1);
         }
       }
     }
