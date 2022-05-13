@@ -36,6 +36,10 @@
       animation: fadeInUp 1s 1s;
       animation-fill-mode: forwards;
       clear: both;
+
+      .error-message {
+        color: red;
+      }
     }
 
     li.half-width {
