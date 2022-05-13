@@ -6,20 +6,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 200ms ease-out; 
+  transition: transform 200ms ease-out;
   cursor: pointer;
 
-  .card-title {
-    font-size: 2rem;
-    color: var(--theme-bg);
-    text-align: center;
-    padding: 1rem;
-  }
+  .card-header {
 
-  .card-image {
-    heigth: 12rem;
-    width: 100%;
-    object-fit: cover;
+    .card-title {
+      font-size: 2rem;
+      color: var(--theme-bg);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .card-image {
+      height: 12rem;
+      width: 100%;
+      object-fit: fill;
+    }
   }
 
   .card-text {
@@ -32,7 +35,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    
+
     .card-link {
       text-decoration: none;
       color: var(--theme-bg);

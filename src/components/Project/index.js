@@ -3,12 +3,14 @@ import "./index.scss";
 const Project = (props) => {
   return (
     <div className="card">
+      <div className="card-header">
       <h1 className="card-title">{props.project.name}</h1>
       <img
         className="card-image"
         src={props.project.image}
         alt={props.project.name}
       />
+      </div>
       <p className="card-text">{props.project.description}</p>
       <div className="card-links">
         <a
