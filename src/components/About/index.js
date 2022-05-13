@@ -14,6 +14,7 @@ const About = () => {
         Especially sailing the Puget Sound.
       </p>
 
+      <h2>Resume</h2>
       <p>
         You can find more details in my CV.{" "}
         <a href="./CV_202110.pdf" className="dllink">

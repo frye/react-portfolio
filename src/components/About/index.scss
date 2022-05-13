@@ -7,6 +7,12 @@
     color: var(--theme-highlight-color);
   }
 
+  h2 {
+    font-size: 1.5em;
+    padding: 10px;
+    color: var(--theme-highlight-color);
+  }
+
   p {
     padding: 10px;
   }
@@ -17,6 +23,22 @@
 
     &:hover {
       color: var(--theme-highlight-color);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-text {
+    padding: 120px 20px;
+
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      text-align: center;
     }
   }
 }

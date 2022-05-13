@@ -17,3 +17,18 @@
     justify-content: left;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .project-page {
+    padding: 120px 20px;
+
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .projects-container {
+      justify-content: center;
+    }
+  }
+}
