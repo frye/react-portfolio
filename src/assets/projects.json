@@ -40,5 +40,12 @@
     "image": "./images/code-quiz.jpg",
     "deployed_link": "https://frye.github.io/code-quiz/",
     "github_link": "https://github.com/frye/codequiz"
+  },
+  {
+    "name": "Trivia Game",
+    "description": "Test your knowledge of the world of trivia. Answer as many questions as you can. Wrong answers will reduce the available time!",
+    "image": "./images/code-quiz.jpg",
+    "deployed_link": "https://frye.github.io/trivia-game/",
+    "github_link": "https://github.com"
   }
 ]
