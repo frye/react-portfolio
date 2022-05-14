@@ -79,17 +79,3 @@
   }
 }
 
-@media screen and (max-height: 600px) {
-  .hero-area {
-
-    .hero-line {
-      order: 2;
-      margin-top: none;
-      margin-bottom: 20px;
-    }
-
-    .hero-picture {
-      order: 3;
-    }
-  }
-}
