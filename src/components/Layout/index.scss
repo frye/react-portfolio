@@ -5,7 +5,7 @@
   font-family: var(--theme-font-family);
 }
 
-@media screen and (max:height 768px) {
+@media screen and (max-height: 768px) {
   .page {
     height: 180vh;
     font-size: 0.7em;
