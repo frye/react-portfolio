@@ -3,6 +3,8 @@ import "./index.scss";
 const projectsJson = require("../../assets/projects.json");
 const Projects = () => {
   return (
+    <>
+    <h1>Blah</h1>
     <div className="project-page">
       <h1>Some of my projects</h1>
       <div className="projects-container">
@@ -11,6 +13,7 @@ const Projects = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

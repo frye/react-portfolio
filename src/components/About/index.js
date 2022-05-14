@@ -1,4 +1,8 @@
+import { faApple, faCss3, faHtml5, faJsSquare, faLinux, faNodeJs, faPython, faReact, faWindows } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.scss";
+// import cSharpLogo from '../../assets/images/Csharp_Logo.png';
+
 const About = () => {
   return (
     <div className="about-text">
@@ -13,6 +17,22 @@ const About = () => {
         On my free time I like to spend time in the beautiful Pacific Northwest.
         Especially sailing the Puget Sound.
       </p>
+
+      <h2>Technologies</h2>
+      <p>Below is a list of some of the technologies I have worked with during 
+        my 20+ years in the field.</p>
+      <div className="tech-container">
+        <FontAwesomeIcon icon={faHtml5} />
+        <FontAwesomeIcon icon={faCss3} />
+        <FontAwesomeIcon icon={faJsSquare} />
+        <FontAwesomeIcon icon={faReact} />
+        <FontAwesomeIcon icon={faNodeJs} />
+        <FontAwesomeIcon icon={faPython} />
+        <FontAwesomeIcon icon={faLinux} />
+        <FontAwesomeIcon icon={faWindows} />
+        <FontAwesomeIcon icon={faApple} />
+        {/* <FontAwesomeIcon icon={cSharpLogo} /> */}
+      </div>
 
       <h2>Resume</h2>
       <p>

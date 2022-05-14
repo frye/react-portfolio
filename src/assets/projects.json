@@ -6,7 +6,7 @@
     "deployed_link": "https://fast-cliffs-81659.herokuapp.com/",
     "github_link": "https://github.com/got-git-group/sproutspy"
   },
-    {
+  {
     "name": "Weathertool",
     "description": "Keep track of the weather at your facorite locations. Add and remove locations and view 5 day forecast.",
     "image": "./images/weather-dashboard.jpg",
@@ -36,7 +36,7 @@
   },
   {
     "name": "Code Quiz",
-    "description": "Test your javascript knowledge. Answer as many questions as you can. Wrong answers will reduce the available time!", 
+    "description": "Test your javascript knowledge. Answer as many questions as you can. Wrong answers will reduce the available time!",
     "image": "./images/code-quiz.jpg",
     "deployed_link": "https://frye.github.io/code-quiz/",
     "github_link": "https://github.com/frye/codequiz"
