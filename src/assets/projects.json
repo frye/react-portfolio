@@ -2,9 +2,9 @@
   {
     "name": "SproutSpy",
     "description": "Helper tool for any home gardener. Check your growth zone and find out what plants to plant!",
-    "image": "./images/sproutspy.jpg",
-    "deployed_link": "https://fast-cliffs-81659.herokuapp.com/",
-    "github_link": "https://github.com/got-git-group/sproutspy"
+    "image": "./images/sproutspy3.png",
+    "deployed_link": "https://sprout-spy.herokuapp.com/",
+    "github_link": "https://github.com/got-git-group/SproutSpy-3.0"
   },
   {
     "name": "Weathertool",
