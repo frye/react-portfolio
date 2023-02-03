@@ -28,11 +28,6 @@ See the screenshot below for a teaser:
 
 You can also visit the deployed application on my [GitHub pages](https://frye.github.io/react-portfolio).
 
-
-
-
-
-
 ## More information:
 - Through GitHub: [@frye](https://github.com/frye)
 - Via Email: psjcode@gmail.com
