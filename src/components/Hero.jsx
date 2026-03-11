@@ -1,8 +1,12 @@
+import profileImg from '../assets/profile-sailing.jpg'
 import './Hero.css'
 
 export default function Hero() {
   return (
     <section className="hero" id="home">
+      <div className="hero-profile">
+        <img src={profileImg} alt="Samuli Järvinen sailing" className="hero-profile-img" />
+      </div>
       <p className="hero-tagline">Bridging Technology &amp; Customer Success</p>
       <h1 className="hero-name gradient-text">Samuli Järvinen</h1>
       <h2 className="hero-title">Senior Solutions Engineer</h2>
