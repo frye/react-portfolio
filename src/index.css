@@ -1,0 +1,148 @@
+/* ===== CSS Custom Properties ===== */
+:root {
+  --bg-primary: #090030;
+  --bg-secondary: #0d0040;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-card-hover: rgba(255, 255, 255, 0.07);
+  --accent: #44c5e6;
+  --accent-purple: #7b61ff;
+  --font-primary: #d3f6ff;
+  --font-muted: #8b9fc7;
+  --font-family: "Noto Sans", sans-serif;
+  --glow: 0 0 20px rgba(68, 197, 230, 0.15);
+  --glow-strong: 0 0 30px rgba(68, 197, 230, 0.25);
+  --border-subtle: rgba(68, 197, 230, 0.12);
+  --border-hover: rgba(68, 197, 230, 0.35);
+  --section-gap: 6rem;
+  --content-max: 1100px;
+}
+
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  background: linear-gradient(170deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  color: var(--font-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #6dd8f5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== Dot Grid Background ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(68, 197, 230, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Utility: Gradient Text ===== */
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-purple) 50%, var(--accent) 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ===== Utility: Glassmorphism Card ===== */
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  box-shadow: var(--glow);
+  transform: translateY(-4px);
+}
+
+/* ===== Utility: Section Container ===== */
+.section {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--section-gap) 1.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--font-muted);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== Scroll Reveal Animation ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  :root {
+    --section-gap: 4rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
