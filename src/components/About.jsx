@@ -37,7 +37,7 @@ export default function About() {
             <span className="stat-label">Years in Tech</span>
           </div>
           <div className="glass-card stat-card">
-            <span className="stat-number gradient-text">3</span>
+            <span className="stat-number gradient-text">2</span>
             <span className="stat-label">Countries Lived In</span>
           </div>
           <div className="glass-card stat-card">
