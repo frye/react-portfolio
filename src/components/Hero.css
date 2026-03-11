@@ -22,7 +22,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center 40%;
-  filter: brightness(0.45) saturate(1.2);
+  filter: brightness(0.55) saturate(1.2);
 }
 
 /* Dark gradient overlay for text readability */
@@ -32,9 +32,9 @@
   z-index: 1;
   background: linear-gradient(
     180deg,
-    rgba(9, 0, 48, 0.6) 0%,
-    rgba(9, 0, 48, 0.3) 40%,
-    rgba(9, 0, 48, 0.5) 70%,
+    rgba(9, 0, 48, 0.5) 0%,
+    rgba(9, 0, 48, 0.2) 40%,
+    rgba(9, 0, 48, 0.4) 70%,
     var(--bg-primary) 100%
   );
 }
@@ -96,9 +96,18 @@
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   opacity: 0;
   animation: fade-up 0.8s ease 0.4s forwards;
+}
+
+.hero-aka {
+  font-size: 1.05rem;
+  color: var(--font-muted);
+  font-style: italic;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fade-up 0.8s ease 0.5s forwards;
 }
 
 .hero-title {

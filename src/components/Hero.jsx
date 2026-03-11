@@ -15,6 +15,7 @@ export default function Hero() {
         </div>
         <p className="hero-tagline">Bridging Technology &amp; Customer Success</p>
         <h1 className="hero-name gradient-text">Samuli Järvinen</h1>
+        <p className="hero-aka">(Sam Jarvinen)</p>
         <h2 className="hero-title">Senior Solutions Engineer</h2>
         <p className="hero-description">
           Partnering with customers to unlock the full potential of their technology
