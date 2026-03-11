@@ -1,0 +1,32 @@
+.focus-areas {
+  padding-bottom: 2rem;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.focus-card {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.focus-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.focus-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.focus-card p {
+  color: var(--font-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

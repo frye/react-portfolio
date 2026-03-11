@@ -1,33 +1,16 @@
-# React Portfolio
+# React + Vite
 
-## Description
-This is a remake of the previous portfolio using React with animate.css, validator, fortawesome icons and gh-pages for deployment. 
-It functions as a showcase of the skills learned so far in the full-stack developer class.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Currently, two official plugins are available:
 
-## Table of contents
-- [Description](#description)
-- [License](#license)
-- [Installation](#installation)
-- [How to use](#how-to-use)
-- [More information](#more-information)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Installation
-- Clone the repo
-- run ```npm install```
-- run ```npm start``` to launch the application and a connected browser
+## React Compiler
 
-## How to use
-After launching the application a browser window should have opened. This will contain the single page react application.
-If this did not happen open your broser and point it to the URL displayed on console after executing ```npm start```.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-See the screenshot below for a teaser:
-![Portfolio screenshot](./src/assets/images/portfolioscreenshot.png)
+## Expanding the ESLint configuration
 
-You can also visit the deployed application on my [GitHub pages](https://frye.github.io/react-portfolio).
-
-## More information:
-- Through GitHub: [@frye](https://github.com/frye)
-- Via Email: psjcode@gmail.com
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
