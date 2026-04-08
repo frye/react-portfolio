@@ -27,8 +27,14 @@ export default function About() {
           </p>
           <p>
             Outside of work, you&rsquo;ll find me exploring the beautiful Pacific Northwest —
-            especially sailing the Puget Sound.
+            sailing the Puget Sound, hiking mountain trails, and capturing it all through
+            photography.
           </p>
+          <div className="about-interests">
+            <span className="interest-tag">⛵ Sailing</span>
+            <span className="interest-tag">🥾 Hiking</span>
+            <span className="interest-tag">📷 Photography</span>
+          </div>
         </div>
 
         <div className="about-stats">

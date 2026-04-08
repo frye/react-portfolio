@@ -110,6 +110,7 @@ body::before {
   max-width: var(--content-max);
   margin: 0 auto;
   padding: var(--section-gap) 1.5rem;
+  scroll-margin-top: 4rem;
 }
 
 .section-title {

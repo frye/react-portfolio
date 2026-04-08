@@ -1,0 +1,241 @@
+.gallery-page {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 8rem 1.5rem 4rem;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.gallery-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-subtitle {
+  color: var(--font-muted);
+  font-size: 1.1rem;
+}
+
+/* ===== Gear Dropdown ===== */
+.gear-section {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.gear-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  color: var(--font-primary);
+  font-size: 1rem;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.gear-toggle:hover {
+  border-color: var(--border-hover);
+}
+
+.gear-chevron {
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.gear-chevron.open {
+  transform: rotate(180deg);
+}
+
+.gear-list {
+  list-style: none;
+  margin-top: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+}
+
+.gear-list li {
+  padding: 0.6rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gear-list li:last-child {
+  border-bottom: none;
+}
+
+.gear-type {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  min-width: 3.5rem;
+}
+
+.gear-name {
+  color: var(--font-muted);
+  font-size: 0.95rem;
+}
+
+/* ===== Thumbnail Grid ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-thumb {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-thumb:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--glow);
+  transform: translateY(-4px);
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Lightbox ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: lb-fade-in 0.2s ease;
+}
+
+@keyframes lb-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox-content img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}
+
+.lb-close,
+.lb-prev,
+.lb-next {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.lb-close:hover,
+.lb-prev:hover,
+.lb-next:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.lb-close {
+  top: -1rem;
+  right: -1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lb-prev,
+.lb-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lb-prev {
+  left: -4rem;
+}
+
+.lb-next {
+  right: -4rem;
+}
+
+.lb-counter {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--font-muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .gallery-page {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .gallery-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .lb-prev {
+    left: 0.5rem;
+  }
+
+  .lb-next {
+    right: 0.5rem;
+  }
+
+  .lb-close {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
