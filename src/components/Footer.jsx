@@ -18,7 +18,7 @@ function LinkedInIcon() {
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <ul className="footer-socials">
         <li>
           <a

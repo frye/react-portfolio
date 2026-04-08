@@ -6,6 +6,7 @@ const sections = [
   { label: 'About', hash: '#about' },
   { label: 'Experience', hash: '#experience' },
   { label: 'Focus', hash: '#focus' },
+  { label: 'Contact', hash: '#contact' },
 ]
 
 export default function Nav() {

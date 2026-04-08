@@ -2,6 +2,7 @@
   border-top: 1px solid var(--border-subtle);
   padding: 3rem 1.5rem;
   text-align: center;
+  scroll-margin-top: 4rem;
 }
 
 .footer-socials {
